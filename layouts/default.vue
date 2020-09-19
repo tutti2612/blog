@@ -1,20 +1,23 @@
 <template>
-  <div>
-    <Nuxt />
+  <div class="flex flex-col min-h-screen">
+    <header class="flex h-16 bg-black items-center">
+      <nuxt-link to="/" class="text-2xl mx-4 text-white">
+        Kohei Tsuchiya
+      </nuxt-link>
+    </header>
+    <main class="m-4">
+      <Nuxt />
+    </main>
+    <footer class="flex h-16 border-t border-gray-300 mt-auto items-center">
+      <p class="mx-4">© 2020 Kohei Tsuchiya</p>
+    </footer>
   </div>
 </template>
 
 <style>
 html {
-  font-family:
-    'Source Sans Pro',
-    -apple-system,
-    BlinkMacSystemFont,
-    'Segoe UI',
-    Roboto,
-    'Helvetica Neue',
-    Arial,
-    sans-serif;
+  font-family: "Source Sans Pro", -apple-system, BlinkMacSystemFont, "Segoe UI",
+    Roboto, "Helvetica Neue", Arial, sans-serif;
   font-size: 16px;
   word-spacing: 1px;
   -ms-text-size-adjust: 100%;

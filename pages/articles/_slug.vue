@@ -1,14 +1,12 @@
 <template>
-  <div class="container">
-    {{ article.title }}
-
+  <div>
     <nuxt-content :document="article" />
   </div>
 </template>
 
 <script>
+import "@/assets/css/github-markdown.css";
 export default {
-  components: {},
   async asyncData({ $content, params }) {
     const article = await $content(`articles/${params.slug}`).fetch();
 
